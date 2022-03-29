@@ -3,32 +3,32 @@ import time
 
 IR1 = 15
 IR2 = 13
-IR3 = 19
-IR4 = 21
-IR5 = 23
-IR6 = 27
+IR3 = 33
+IR4 = 11
+IR5 = 19
+IR6 = 21
 IR7 = 29
-IR8 = 30
+IR8 = 31
 
-LM1 = 35
-LM2 = 37
-EN1_PIN = 33
-RM1 = 28
-RM2 = 36
-EN2_PIN = 32
+LM1 = 18
+LM2 = 16
+EN1_PIN = 32
+RM1 = 40
+RM2 = 19
+EN2_PIN = 12
 
 GPIO.setmode(GPIO.BOARD)
-GPIO.sewarnings(False)
+GPIO.setwarnings(False)
 
 
-GPIO.setup(IR1, GPIO.IN)
-GPIO.setup(IR2, GPIO.IN)
-GPIO.setup(IR3, GPIO.IN)
-GPIO.setup(IR4, GPIO.IN)
-GPIO.setup(IR5, GPIO.IN)
-GPIO.setup(IR6, GPIO.IN)
-GPIO.setup(IR7, GPIO.IN)
-GPIO.setup(IR8, GPIO.IN)
+# GPIO.setup(IR1, GPIO.IN)
+# GPIO.setup(IR2, GPIO.IN)
+# GPIO.setup(IR3, GPIO.IN)
+# GPIO.setup(IR4, GPIO.IN)
+# GPIO.setup(IR5, GPIO.IN)
+# GPIO.setup(IR6, GPIO.IN)
+# GPIO.setup(IR7, GPIO.IN)
+# GPIO.setup(IR8, GPIO.IN)
 GPIO.setup(LM1, GPIO.OUT)
 GPIO.setup(LM2, GPIO.OUT)
 GPIO.setup(EN1_PIN, GPIO.OUT)
