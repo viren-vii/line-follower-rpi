@@ -1,0 +1,43 @@
+import RPi.GPIO as GPIO
+import time
+
+IR1 = 15
+IR2 = 13
+IR3 = 19
+IR4 = 21
+IR5 = 23
+IR6 = 27
+IR7 = 29
+IR8 = 30
+
+LM1 = 35
+LM2 = 37
+EN1_PIN = 33
+RM1 = 28
+RM2 = 36
+EN2_PIN = 32
+
+GPIO.setmode(GPIO.BOARD)
+GPIO.sewarnings(False)
+
+
+GPIO.setup(IR1, GPIO.IN)
+GPIO.setup(IR2, GPIO.IN)
+GPIO.setup(IR3, GPIO.IN)
+GPIO.setup(IR4, GPIO.IN)
+GPIO.setup(IR5, GPIO.IN)
+GPIO.setup(IR6, GPIO.IN)
+GPIO.setup(IR7, GPIO.IN)
+GPIO.setup(IR8, GPIO.IN)
+GPIO.setup(LM1, GPIO.OUT)
+GPIO.setup(LM2, GPIO.OUT)
+GPIO.setup(EN1_PIN, GPIO.OUT)
+GPIO.setup(RM1, GPIO.OUT)
+GPIO.setup(RM2, GPIO.OUT)
+GPIO.setup(EN2_PIN, GPIO.OUT)
+
+EN1_PWM = GPIO.PWM(EN1_PIN, 1000)
+EN2_PWM = GPIO.PWM(EN2_PIN, 1000)
+
+EN1_PWM.start(0)
+EN2_PWM.start(0)
