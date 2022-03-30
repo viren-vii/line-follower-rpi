@@ -5,16 +5,16 @@ IR1 = 15
 IR2 = 13
 IR3 = 33
 IR4 = 11
-IR5 = 19
-IR6 = 21
+IR5 = 40
+IR6 = 38
 IR7 = 29
 IR8 = 31
 
 LM1 = 18
 LM2 = 16
 EN1_PIN = 32
-RM1 = 40
-RM2 = 19
+RM1 = 19
+RM2 = 35
 EN2_PIN = 12
 
 GPIO.setmode(GPIO.BOARD)

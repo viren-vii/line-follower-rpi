@@ -44,6 +44,6 @@ def deg360(speed1, speed2):
     GPIO.output(pins.LM1, GPIO.HIGH)
     GPIO.output(pins.LM2, GPIO.LOW)
     GPIO.output(pins.RM1, GPIO.LOW)
-    GPIO.ouput(pins.RM2, GPIO.HIGH)
+    GPIO.output(pins.RM2, GPIO.HIGH)
     pins.EN1_PWM.ChangeDutyCycle(speed1)
     pins.EN2_PWM.ChangeDutyCycle(speed2)
